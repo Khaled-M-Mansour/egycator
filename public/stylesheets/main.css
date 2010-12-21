@@ -1,0 +1,104 @@
+/* 
+    Document   : main
+    Created on : Dec 17, 2010, 2:17:21 PM
+    Author     : Khaled
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline-style:none;
+    -moz-background-origin:padding;
+    -moz-background-inline-policy:continuous;
+    -moz-background-clip:border;
+}
+img{
+    border:medium none;
+}
+body{
+    direction: rtl;
+    width:1100px;
+    margin:0 auto; /* for the rest */
+}
+#header{
+    width: 100%;
+
+}
+#header1{
+    background-color: #224466;
+}
+#signup{
+    margin-right: 20px;
+}
+#invite{
+    margin-right: 300px;
+}
+#greenSeperator{
+    background-color: #89b556;
+    padding: 3px;
+}
+#header2{
+    background-color:  #5599bb;
+    background-image:   url(/images/h2-background.gif );
+    background-repeat: no-repeat;
+    background-position: 300px -80px; /* 1st : incrementing goes to right --  2nd : incrementing goes down*/
+    padding: 30px 100px 10px 0;
+}
+#logo{
+    margin-right: 10px;
+}
+
+#logoSlognan{
+
+}
+#header2right{
+    display: inline;
+}
+#header2left{
+    display: inline;
+    position: absolute;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+#chooseTownImage{
+    display:inline-block;
+    background-image:   url(/images/chooseTownImage.gif );
+    background-repeat: no-repeat;
+    width: 190px;
+    height:55px;
+    text-decoration: none;
+    color:white;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial,Tahoma;
+    text-indent: 50px;
+    padding-top: 5px;
+}
+#subscription{
+    margin-right: 150px;
+}
+#blueSeperator{
+    background-color: #5599bb;
+    padding:2px;
+}
+.round{
+-moz-border-radius-bottomleft:0;
+-moz-border-radius-bottomright:0;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-box-shadow:2px 1px 6px rgba(0, .8, 0, 0.2);
+border-top:4px solid #d8e9f0;
+border-right:2px solid #d8e9f0;
+border-left:2px solid #d8e9f0;
+padding-right:10px;
+}
