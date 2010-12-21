@@ -7,7 +7,45 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div id="header">
+    <div id="header1">
+      <%  signup = image_tag("signup.gif", :alt => "signup",:id => "signup" ) %>
+      <%= link_to signup, signup_path %>
+      <%  login = image_tag("login.gif", :alt => "login",:id => "login" ) %>
+      <%= link_to login, signup_path %>
+      <%  invite = image_tag("invite.jpg", :alt => "invite",:id => "invite" ) %>
+      <%= link_to invite, signup_path %>
+    </div>
+    <div id="greenSeperator"></div>
+    <div id="header2">
+      <div id="header2right">
+        <%  logo = image_tag("logo.png", :alt => "logo",:id => "logo" ) %>
+        <%= link_to logo, signup_path %>
 
+        <%  logoSlogan = image_tag("logoSlogan.png", :alt => "logoSlogan",:id => "logoSlogan" ) %>
+        <%= link_to logoSlogan, signup_path %>
+      </div>
+      <div id="header2left">
+        <%= link_to "مدينة نصر", signup_path,:id=>"chooseTownImage" %>
+      </div>
+    </div>
+
+      
+
+    <div id="navigation"></div>
+        <%  todayDeal = image_tag("todayDeal.gif", :alt => "todayDeal",:id => "todayDeal" ) %>
+        <%= link_to todayDeal, signup_path %>
+
+        <%  previousDeals = image_tag("previousDeals.gif", :alt => "previousDeals",:id => "previousDeals" ) %>
+        <%= link_to previousDeals, signup_path %>
+
+        <%  knowHow = image_tag("knowHow.gif", :alt => "knowHow",:id => "knowHow" ) %>
+        <%= link_to knowHow, signup_path %>
+
+        <%  subscription = image_tag("subscription.gif", :alt => "subscription",:id => "subscription" ) %>
+        <%= link_to subscription, signup_path %>
+    </div>
+    <div id="blueSeperator"></div>
 <%= yield %>
 
 </body>
